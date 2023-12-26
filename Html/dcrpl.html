@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debit Card Request</title>
+    <link rel="stylesheet" href="../Css/dcrpl.css">
+</head>
+<body>
+    <header id="header1">
+        <nav class="navbar navbar-default">
+
+            <div class="container-fluid">
+                <div class="container">
+                    <table class="table1" style="font-size: medium; width: 100%; align-items: baseline;">
+                        <tr>
+                            <td style="width: 60%; float: left;">
+                                <img src="../Icons/cblogo.jpeg" class="img-responsive" alt="logo" style="height: 90px;" />
+                            </td>
+                            <td style="width: 40%; float: right;">
+                                <img src="../Icons/DebitCardLogo.png" class="img-responsive" alt="logo" style="height: 90px;" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container">
+            
+        <div class="panel-group" id="accordion">
+            
+            <div class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <table style="width: 100%; background-color: aliceblue;" class="table table-bordered">
+                        <tr>
+                            <td style="width: 50%;">
+                                <div>
+                                    <p>
+                                        <font face="tahoma" size="2px"> <strong>Please read the instructions : </strong> </font>
+                                        <br />
+                                        <font face="tahoma" size="2px">  1. Please enter Account Number  and type the characters displayed above&nbsp; and click&nbsp; Proceed.</font>
+                                        <br />
+                                        <font face="tahoma" size="2px">  2. OTP will be&nbsp; received on the registered Mobile Number and the same has to be&nbsp; entered.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  3.&nbsp;Once OTP is validated existing Address details will be displayed and option to change the address details is also available.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  4. Once Address details are submitted,Card Request will be placed and the card will be dispatched&nbsp; shortly.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  5. In case of Joint account , Please enter Primary account holder PAN or AAdhar no.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  6. <a id="MainContent_lnkClick" class="linkHdr" href="https://www.canarabank.com/User_page.aspx?othlink=301" target="_blank">Click here</a>
+                                             to know more details about Card Product information and fees details.</font>
+                                    </p>
+                                    <br />
+                                    <p>
+                                        <font face="tahoma" size="2px">  
+                                       Click here to <a id="MainContent_lnkTrack" class="linkHdr" href="javascript:__doPostBack(&#39;ctl00$MainContent$lnkTrack&#39;,&#39;&#39;)">Track Status</a> of Your Debit card Request.
+                                    </font>
+                                    </p>
+                                </div>
+                                <br />
+                                <div style="border: 1px solid dotted; border-color: brown;">
+                                    <p>
+                                        <font face="tahoma" size="2px"> <strong>Below mentioned accounts are in-eligible/Not Eligible for Applying Debit Cards Online: </strong> </font>
+                                        <br />
+                                        <font face="tahoma" size="2px">  1. Account which is operated jointly are not eligible. </font>
+                                        <br />
+                                        <font face="tahoma" size="2px">  2. Minors Accounts and Students who are aged below 10 years are not eligible.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  3. Accounts where Court/Income tax orders or any other govt order and litigation/ disputed are not eligible.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  4. Account encumbered/mortgaged  are not eligible.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  5. Business Overdraft/Cash Credit accounts and loan accounts  are not eligible.</font>
+                                    </p>
+                                    <p>
+                                        <font face="tahoma" size="2px">  6. If the Customer is holding 2 active debit cards linked to the account, then he/she is not eligible to apply debit card through this mode.</font>
+                                    </p>
+    
+                                </div>
+                            </td>
+                            
+                            <td style="width: 50%;">
+                                <table style="width: 100%" class="table table-bordered">
+                                    <tr>
+                                        <td colspan="4">
+                                            <em class="text-danger">Note : Fields marked with &#39;*&#39; are mandatory.</em>
+                                        </td>
+                                    </tr>
+                                    <tr style="background-color: floralwhite;">
+                                        <td colspan="4" align="center">
+                                            <span id="MainContent_Label1" style="font-weight:bold;">Apply for Debit Card</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="lblID" class="control-label">
+                                                <span class="text-danger">*</span>
+                                                Enter Account Number : 
+                                            </label>
+                                        </td>
+                                        <td colspan="2">
+                                            <input name="ctl00$MainContent$txtAcctNo" type="text" maxlength="14" id="MainContent_txtAcctNo" class="txtcontent" placeholder="Enter Account number" autocomplete="off" />
+                                            
+                                            <span id="error_txtAcctNo" class="error" style="display: none;">Account number should be between 12 and 14 digit
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="lblID" class="control-label">
+                                                <span class="text-danger">*</span>
+                                                Select PAN or Aadhaar Number or Passport Number linked to Account No. : 
+                                            </label>
+                                        </td>
+                                        <td colspan="2">
+                                            <table id="MainContent_rblPANAadhaar" class="lblcontent">
+        <tr>
+            <td><input id="MainContent_rblPANAadhaar_0" type="radio" name="ctl00$MainContent$rblPANAadhaar" value="P" checked="checked" /><label for="MainContent_rblPANAadhaar_0">PAN</label></td><td><input id="MainContent_rblPANAadhaar_1" type="radio" name="ctl00$MainContent$rblPANAadhaar" value="A" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$rblPANAadhaar$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="MainContent_rblPANAadhaar_1">Aadhaar</label></td><td><input id="MainContent_rblPANAadhaar_2" type="radio" name="ctl00$MainContent$rblPANAadhaar" value="PT" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$rblPANAadhaar$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="MainContent_rblPANAadhaar_2">Passport</label></td>
+        </tr>
+    </table>
+                                        </td>
+                                    </tr>
+                                    <tr id="MainContent_trPAN">
+        <td colspan="2">
+                                            <label for="lblID" class="control-label">
+                                                <span class="text-danger">*</span>
+                                                Enter PAN Number : 
+                                            </label>
+                                        </td>
+        <td colspan="2">
+                                            <input name="ctl00$MainContent$txtPAN" type="text" maxlength="10" id="MainContent_txtPAN" class="txtcontent" autocomplete="off" />
+                                            
+                                            <span id="error_txtPAN" class="error" style="display: none;">Invalid PAN No.
+                                            </span>
+                                        </td>
+    </tr>
+    
+                                    
+                                    
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td colspan="2">
+                                          
+                                                                <img id="MainContent_imgCaptcha" src="GenerateCaptcha.aspx?638321141187596063" />&nbsp;&nbsp;<input type="image" name="ctl00$MainContent$btnRefresh" id="MainContent_btnRefresh" src="Images/Refresh.png" style="height:25px;" />
+                                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="lblID" class="control-label">
+                                                <span class="text-danger">*</span>
+                                                Type the characters of the above image : 
+                                            </label>
+                                        </td>
+                                        <td colspan="2">
+                                            <input name="ctl00$MainContent$txtWord" type="text" autocomplete="off" maxlength="6" id="MainContent_txtWord" class="txtcontent" autocomplete="off" placeholder="Enter Text as shown above" />
+                                            <span id="MainContent_ReqtxtWord" class="error" style="visibility:hidden;">Enter Text as shown above</span>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" align="center">
+                                            <div class="form-group">
+                                                <div>
+                                                    <input type="submit" name="ctl00$MainContent$BtnProceed" value="Proceed" id="MainContent_BtnProceed" disabled="disabled" class="aspNetDisabled btncontent" style="width:150px;" />
+    
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <input type="submit" name="ctl00$MainContent$btnReset" value="Reset" id="MainContent_btnReset" style="width:150px;" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                
+                                <br />
+                                <div id="divProcess" style="display: none" align="center">
+                                    <img src="images/loading.gif" alt="processing Please Wait" />
+                                    <br />
+                                    <p>
+                                        <font color="purple"><b>Please Wait....</b></font>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="MainContent_showtime"></div>
+        </div>
+
+    <footer>
+        टोल फ्री हेल्पलाइन नंबर / Toll Free HelpLine:18004250018   ई- मेल / E-mail:hodbshelpdesk@canarabank.com
+        <br>
+        &nbsp; &nbsp;&nbsp; सूचना प्रौद्योगिकी विभाग,मुख्य कार्यालय केनरा बैंक बंगलोर / Designed & Developed by DIT Wing Canara Bank Bangalore - 560 001
+    </footer>
+</body>
+</html>

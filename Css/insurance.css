@@ -1,0 +1,13 @@
+#insu{
+    >a{
+        background-color: rgb(124, 168, 187);
+        font-size: 15px;
+        text-decoration: underline;
+        color: black;
+        row-gap: 50px;
+
+    }
+    >a:hover{
+        background-color: rgb(13, 162, 232);
+    }
+}

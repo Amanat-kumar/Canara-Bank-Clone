@@ -1,0 +1,11 @@
+.leftpanel .left-panel-link {
+    background-color: #01a1dd;
+    height: 60px;
+    width: 60px;
+    margin: 2px 0;
+    padding: 7px;
+    text-align: center;
+    color: #fff;
+    font-size: 70%;
+    transition: .5s;
+}

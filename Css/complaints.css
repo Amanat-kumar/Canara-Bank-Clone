@@ -1,0 +1,16 @@
+#table{
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    left: 30%;
+    top: 190px;
+    >h2{
+        margin-left: 20%;
+    }
+
+}
+
+td>a{
+    color: blue;
+    font-size: 12px;
+}

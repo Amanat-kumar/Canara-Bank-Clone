@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Service Request __ CANARA BANK</title>
+    <link rel="stylesheet" href="../Css/instantsbreg.css">
+</head>
+<body>
+    <div id="form">
+    <header>
+        <img src="../Icons/Logo-new-white.png" alt="logo" height="50px" width="400px">
+        <div id="re1">Request for a Service</div>
+    </header>
+    <br>
+    <br>
+    <hr>
+    <label for="ac">A/c No. <br>(If already a Customer)</label>
+    <input type="number">
+    <br>
+    <br>
+    <label for="ctype">Customer Type :</label>
+    <input type="radio" id="individual" value="individual"> <label for="individual">INDIVIDUAL</label>
+    <input type="radio" id="business_entity" value="business_entity"> <label for="business_entity">BUSINESS ENTITY</label>
+    <input type="radio" id="group_of_individual" value="group_of_individual"> <label for="group_of_individual">GROUP OF INDIVIDUAL</label>
+    <br>
+    <br>
+    <label for="name">Name :</label> <input type="text" id="name">
+    <br>
+    <br>
+    <label for="locality">Locality : </label> <input type="text" id="locality">
+    <label for="mobileno">Mobile No : </label> <input type="number" id="mobileno">
+    <br>
+    <br>
+    <label for="state">State : </label>
+    <select id="state">
+        <option selected="selected" value="0">&lt;-Select-&gt;</option>
+        <option value="35">ANDAMAN &amp; NICOBAR ISLANDS</option>
+        <option value="28">ANDHRA PRADESH</option>
+        <option value="12">ARUNACHAL PRADESH</option>
+        <option value="18">ASSAM</option>
+        <option value="10">BIHAR</option>
+        <option value="4">CHANDIGARH</option>
+        <option value="22">CHATTISGARH</option>
+        <option value="26">DADRA &amp; NAGAR HAVELI</option>
+        <option value="25">DAMAN &amp; DIU</option>
+        <option value="30">GOA</option>
+        <option value="24">GUJARAT</option>
+        <option value="6">HARYANA</option>
+        <option value="2">HIMACHAL PRADESH</option>
+        <option value="1">JAMMU &amp; KASHMIR</option>
+        <option value="20">JHARKHAND</option>
+        <option value="29">KARNATAKA</option>
+        <option value="32">KERALA</option>
+        <option value="31">LAKSHADWEEP</option>
+        <option value="23">MADHYA PRADESH</option>
+        <option value="27">MAHARASHTRA</option>
+        <option value="14">MANIPUR</option>
+        <option value="17">MEGHALAYA</option>
+        <option value="15">MIZORAM</option>
+        <option value="13">NAGALAND</option>
+        <option value="7">NCT OF DELHI</option>
+        <option value="21">ODISHA</option>
+        <option value="OTH65">Othrs </option>
+        <option value="34">PUDUCHERRY</option>
+        <option value="3">PUNJAB</option>
+        <option value="8">RAJASTHAN</option>
+        <option value="11">SIKKIM</option>
+        <option value="33">TAMIL NADU</option>
+        <option value="36">TELANGANA</option>
+        <option value="16">TRIPURA</option>
+        <option value="9">UTTAR PRADESH</option>
+        <option value="5">UTTARAKHAND</option>
+        <option value="19">WEST BENGAL</option>
+    </select>
+    <label for="city">City : </label>
+    <select name="city">
+        <option selected="selected" value="0">&lt;-Select-&gt;</option>
+        <option value="CT050">Bankura</option>
+        <option value="CT055">Barddhaman</option>
+        <option value="CT089">Birbhum</option>
+        <option value="CT129">Dakshin Dinajpur</option>
+        <option value="CT134">Darjiling</option>
+        <option value="CT220">Haora</option>
+        <option value="CT231">Hugli</option>
+        <option value="CT248">Jalpaiguri</option>
+        <option value="CT310">Koch Bihar</option>
+        <option value="CT318">Kolkata</option>
+        <option value="CT366">Maldah</option>
+        <option value="CT391">Murshidabad</option>
+        <option value="CT396">Nadia</option>
+        <option value="CT425">North Twenty Four Parganas</option>
+        <option value="CT440">Paschim Medinipur</option>
+        <option value="CT462">Purba Medinipur</option>
+        <option value="CT466">Puruliya</option>
+        <option value="CT557">South Twenty Four Parganas</option>
+        <option value="CT608">Uttar Dinajpur</option>
+    </select>
+    <br>
+    <br>
+    <label for="emailid">Email ID : </label> <input type="email" id="emailid">
+    <label for="requestfor">Request For : </label>
+    <select id="ddlRequestFor" name="ddlRequestFor">
+        <option value="0" style="display: none">--Select</option>
+        <optgroup label="1. Deposits:">
+            <option value="Opening of SB Account">1. Opening of SB Account</option>
+            <option value="Opening of Current Account">2. Opening of Current Account</option>
+            <option value="PPF Account">3. PPF Account</option>
+            <option value="Deposits - Others">4. Others</option>
+        </optgroup>
+        <optgroup label="2. Loans">
+            <option value="Housing Loan">1. Housing Loan</option>
+            <option value="Vehicle Loan">2. Vehicle Loan</option>
+            <option value="Education Loan">3. Education Loan</option>
+            <option value="MSME Loan">4. MSME Loan</option>
+            <option value="Corporate Loan">5. Corporate Loan</option>
+            <option value="Agriculture Loan">6. Agriculture Loan</option>
+            <option value="Personal Loan">7. Personal Loan</option>
+            <option value="Gold Loan">8. Gold Loan</option>
+            <option value="Loans - Others">9. Others</option>
+        </optgroup>
+        <optgroup label="3. Cards">
+            <option value="Issue of Credit Card">1. Issue of Credit Card</option>
+            <option value="Issue of Debit Card">2. Issue of Debit Card</option>
+            <option value="Cards - Others">3. Others</option>
+        </optgroup>
+        <optgroup label="4. Insurance">
+            <option value="Insurance">1. Insurance</option>
+        </optgroup>
+<optgroup label="5. Merchant Services">
+            <option value="POS Request">1. Apply for POS</option>
+        </optgroup>
+        <optgroup label="6. Others">
+            <option value="Others">1. Others</option>
+        </optgroup>
+    </select>
+    <br>
+    <br>
+    <label for="pin">PIN : </label> <input type="number" name="pin" id="pin">
+    <br>
+    <br>
+    <div id="word">Etvldz     <img src="../Icons/Refresh.png" alt="refresh" height="20px" width="20px"></div>
+    <br>
+    <br>
+    <label for="wordverification">Word Vverification</label> <input type="text" name="wordverification" id="wordverification">
+    <br>
+    <br>
+    <button id="submit">SUBMIT</button>
+    
+    <br>
+    <br>
+    <footer>Designed & Developed by Canara Bank</footer>
+</div>
+</body>
+</html>

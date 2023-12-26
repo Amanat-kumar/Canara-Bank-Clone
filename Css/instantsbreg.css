@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#form{
+    box-shadow: 5px 5px 20px #999999;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 890px;
+    margin: 5% auto;
+}
+header
+{
+    height: 70px;
+    width: 400px;
+    display: grid;
+    background-color: rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+    align-items: center;
+    margin: 0 auto;
+}
+
+#re1{
+    height: 30px;
+    width: 60%;
+    margin: 25px auto;
+    color: rgb(0, 153, 255); 
+    font-size: 25px;
+ }
+ #word{
+    height: 20px;
+    width: 80px;
+    outline-color: palevioletred;
+    outline-style: solid;
+    outline-width: 2px;
+    font-family: cursive;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+ }
+ #submit{
+    margin-left: 45%;
+ }
+
+footer{
+    height: 50px;
+    width: auto;
+    color: white;
+    display: grid;
+    background-color: rgb(0, 153, 255);
+    align-items: center;
+    padding-left: 35%;
+}
